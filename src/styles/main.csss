@@ -1,0 +1,1147 @@
+.about-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/slider-4.jpg);
+  height: 100vh;
+  background-position: center;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .about-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.founders {
+  width: 100vw;
+  height: fit-content; }
+  .founders .founders-body {
+    margin: 130px;
+    height: fit-content; }
+    .founders .founders-body h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      font-weight: 500;
+      color: black;
+      line-height: 72px;
+      text-align: center; }
+    .founders .founders-body .flip-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+
+.flip-card {
+  background-color: transparent;
+  width: 32%;
+  height: 400px;
+  perspective: 1000px; }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: linear-gradient(#90EE90, #1D301D);
+  color: black;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 10px 25px; }
+  .flip-card-front .front-text {
+    font-family: "Playfair+Display", times, serif;
+    font-weight: 200;
+    line-height: 1.8;
+    color: white; }
+    .flip-card-front .front-text h2 {
+      font-size: 20px; }
+    .flip-card-front .front-text p {
+      font-size: 12px; }
+
+/* Style the back side */
+.flip-card-back {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4); }
+  .flip-card-back .back-body {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding-top: 15px;
+    text-align: center; }
+    .flip-card-back .back-body p {
+      font-family: "Mukta Mahee", sans-serif;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #6c757d; }
+    .flip-card-back .back-body .person {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: fit-content; }
+      .flip-card-back .back-body .person .person-img {
+        width: 15%;
+        height: fit-content;
+        margin-right: 15px; }
+        .flip-card-back .back-body .person .person-img img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%; }
+      .flip-card-back .back-body .person .person-text {
+        display: flex;
+        flex-direction: column; }
+        .flip-card-back .back-body .person .person-text h2 {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: #6c757d; }
+        .flip-card-back .back-body .person .person-text p {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 12px;
+          color: #6c757d; }
+
+.card-middle {
+  width: 32%;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4); }
+  .card-middle .back-body {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding-top: 15px;
+    text-align: center; }
+    .card-middle .back-body p {
+      font-family: "Mukta Mahee", sans-serif;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #6c757d; }
+    .card-middle .back-body .person {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: fit-content; }
+      .card-middle .back-body .person .person-img {
+        width: 15%;
+        height: fit-content;
+        margin-right: 15px; }
+        .card-middle .back-body .person .person-img img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%; }
+      .card-middle .back-body .person .person-text {
+        display: flex;
+        flex-direction: column; }
+        .card-middle .back-body .person .person-text h2 {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: #6c757d; }
+        .card-middle .back-body .person .person-text p {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 12px;
+          color: #6c757d; }
+
+.main-container {
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column; }
+
+.home-header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/hero_1.jpg);
+  background-position: center;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .home-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.home-booking-form {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center; }
+  .home-booking-form .home-booking-form-body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%; }
+    .home-booking-form .home-booking-form-body .primary-heading {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      font-weight: 500;
+      color: black;
+      line-height: 72px;
+      margin-bottom: 50px; }
+    .home-booking-form .home-booking-form-body .booking-form {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 20px 0;
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.226); }
+      .home-booking-form .home-booking-form-body .booking-form label {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 200;
+        color: black;
+        font-weight: 700; }
+      .home-booking-form .home-booking-form-body .booking-form input {
+        width: 300px;
+        background-color: white;
+        border: 1px solid #acacac;
+        border-radius: 5px;
+        height: 50px;
+        outline: none; }
+      .home-booking-form .home-booking-form-body .booking-form input:focus {
+        border: 1px solid #FD7E14; }
+      .home-booking-form .home-booking-form-body .booking-form select {
+        width: 100px;
+        background-color: white;
+        border: 1px solid #acacac;
+        border-radius: 5px;
+        height: 50px;
+        outline: none; }
+      .home-booking-form .home-booking-form-body .booking-form select:focus {
+        border: 1px solid #FD7E14; }
+      .home-booking-form .home-booking-form-body .booking-form .home-form-btn {
+        height: 50px;
+        background-color: #FD7E14;
+        border: none;
+        outline: none;
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        color: white;
+        border-radius: 50px;
+        transition: 0.5s;
+        padding: 10px 30px;
+        border: none;
+        outline: none;
+        align-self: flex-end;
+        transition: 0.5s; }
+      .home-booking-form .home-booking-form-body .booking-form .home-form-btn:hover {
+        background-color: #d86b13; }
+
+.home-welcome {
+  background-color: white; }
+  .home-welcome .home-welcome-body {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row; }
+    .home-welcome .home-welcome-body .home-welcome-paragraph {
+      width: 45%;
+      padding: 100px 0;
+      padding-right: 150px;
+      display: flex;
+      flex-direction: column; }
+      .home-welcome .home-welcome-body .home-welcome-paragraph h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        font-weight: 500;
+        color: black;
+        line-height: 72px; }
+      .home-welcome .home-welcome-body .home-welcome-paragraph .p-first {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #6c757d; }
+      .home-welcome .home-welcome-body .home-welcome-paragraph .p-second {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 200;
+        line-height: 29px;
+        color: #6c757d; }
+      .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons button {
+          height: 50px;
+          background-color: #FD7E14;
+          border: none;
+          outline: none;
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          color: white;
+          border-radius: 50px;
+          transition: 0.5s;
+          padding: 10px 30px; }
+        .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons button:hover {
+          background-color: #d86b13; }
+        .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons span {
+          font-family: "Mukta Mahee", sans-serif;
+          color: #6c757d;
+          margin: 0 20px; }
+        .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons a {
+          text-decoration: none;
+          font-family: "Mukta Mahee", sans-serif;
+          color: #FD7E14;
+          transition: 0.5s; }
+        .home-welcome .home-welcome-body .home-welcome-paragraph .welcome-paragraph-buttons a:hover {
+          color: #994b0b; }
+    .home-welcome .home-welcome-body .home-welcome-photo {
+      padding: 100px 0;
+      width: 55%; }
+      .home-welcome .home-welcome-body .home-welcome-photo .welcome-photo {
+        width: 100%; }
+
+.home-great-offers-body {
+  margin: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .home-great-offers-body .home-great-offers-titles {
+    width: 65%;
+    text-align: center;
+    margin-bottom: 40px; }
+    .home-great-offers-body .home-great-offers-titles h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      font-weight: 500;
+      color: black;
+      line-height: 72px; }
+    .home-great-offers-body .home-great-offers-titles p {
+      font-family: "Mukta Mahee", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      color: #6c757d; }
+  .home-great-offers-body .home-great-offers-rooms {
+    background-color: white;
+    display: flex;
+    flex-direction: column; }
+    .home-great-offers-body .home-great-offers-rooms .rooms {
+      display: flex;
+      flex-direction: row; }
+      .home-great-offers-body .home-great-offers-rooms .rooms .rooms-image {
+        width: 50%; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-image img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover; }
+      .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text {
+        width: 50%;
+        padding: 50px; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text h1 {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 56px;
+          line-height: 67px;
+          font-weight: 300;
+          color: #FD7E14; }
+          .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text h1 span {
+            font-family: "Mukta Mahee", sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 200;
+            color: #6c757d; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text h3 {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 32px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 38px; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text .p-first {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 36px;
+          color: #6c757d; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text .p-second {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200;
+          line-height: 29px;
+          color: #6c757d; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text button {
+          height: 50px;
+          background-color: #FD7E14;
+          border: none;
+          outline: none;
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          color: white;
+          border-radius: 50px;
+          transition: 0.5s;
+          padding: 10px 30px; }
+        .home-great-offers-body .home-great-offers-rooms .rooms .rooms-text button:hover {
+          background-color: #d86b13; }
+  .home-great-offers-body .home-great-offers-button {
+    margin-top: 50px;
+    height: 50px;
+    background-color: #FD7E14;
+    border: none;
+    outline: none;
+    font-family: "Mukta Mahee", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 10px 30px; }
+  .home-great-offers-body .home-great-offers-button:hover {
+    background-color: #d86b13; }
+
+.see-the-gallery {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 100px; }
+  .see-the-gallery .see-the-gallery-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; }
+    .see-the-gallery .see-the-gallery-body .see-the-gallery-titles {
+      width: 65%;
+      text-align: center; }
+      .see-the-gallery .see-the-gallery-body .see-the-gallery-titles h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        font-weight: 500;
+        color: black;
+        line-height: 72px; }
+      .see-the-gallery .see-the-gallery-body .see-the-gallery-titles p {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #6c757d; }
+
+.my-carusel {
+  width: 80%;
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  justify-items: center; }
+
+.carousel-control-prev-1 {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -60px;
+  font-size: 40px;
+  border: 2px solid #bd1919; }
+
+.carousel-control-prev-icon {
+  border: 2px solid yellow; }
+
+.carousel-control-next-1 {
+  right: 0;
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: -60px;
+  border: 2px solid #bd1919;
+  font-size: 40px; }
+
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #DEE2E6; }
+  .events .events-titles {
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center; }
+    .events .events-titles h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      font-weight: 500;
+      color: black;
+      line-height: 72px; }
+    .events .events-titles p {
+      font-family: "Mukta Mahee", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      color: #6c757d; }
+  .events .events-main {
+    margin: 0 120px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .events .events-main .events-main-box {
+      display: flex;
+      flex-direction: column;
+      width: 32%;
+      background-color: white;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+      transition: 0.5s; }
+      .events .events-main .events-main-box img {
+        width: 100%; }
+      .events .events-main .events-main-box .events-main-box-text {
+        margin: 0 25px;
+        margin-top: 30px; }
+        .events .events-main .events-main-box .events-main-box-text h6 {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200;
+          color: #ced4da; }
+        .events .events-main .events-main-box .events-main-box-text a {
+          text-decoration: none;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 32px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 38px;
+          font-size: 26px;
+          transition: 0.5s; }
+        .events .events-main .events-main-box .events-main-box-text a:hover {
+          color: #FD7E14; }
+    .events .events-main .events-main-box:hover {
+      box-shadow: 0px 2px 20px 8px rgba(0, 0, 0, 0.103); }
+
+.reservation {
+  background-color: white; }
+  .reservation .reservaton-body {
+    margin: 130px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .reservation .reservaton-body .reservation-text {
+      width: 45%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 32px;
+      font-weight: 500;
+      color: #000000;
+      line-height: 38px; }
+    .reservation .reservaton-body .reservation-buttons {
+      width: 200px;
+      height: 50px;
+      background-color: #FD7E14;
+      border: none;
+      outline: none;
+      font-family: "Mukta Mahee", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      color: white;
+      border-radius: 50px;
+      transition: 0.5s;
+      padding: 10px 30px; }
+    .reservation .reservaton-body .reservation-buttons:hover {
+      background-color: #d86b13; }
+
+footer {
+  height: 100vh;
+  background-color: #1A1A1A; }
+  footer .footer-body {
+    display: flex;
+    flex-direction: column;
+    margin: 100px; }
+    footer .footer-body .footer-main-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      footer .footer-body .footer-main-1 ul {
+        list-style: none;
+        line-height: 2.5; }
+        footer .footer-body .footer-main-1 ul a {
+          text-decoration: none;
+          transition: 0.5s;
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200; }
+        footer .footer-body .footer-main-1 ul a:hover {
+          color: white; }
+      footer .footer-body .footer-main-1 .footer-contact {
+        display: flex;
+        flex-direction: column; }
+        footer .footer-body .footer-main-1 .footer-contact .footer-contact-box {
+          line-height: 1.7; }
+        footer .footer-body .footer-main-1 .footer-contact i {
+          color: #FD7E14; }
+        footer .footer-body .footer-main-1 .footer-contact span {
+          color: white;
+          font-style: italic;
+          font-family: "Mukta Mahee", sans-serif;
+          margin-left: 13px; }
+        footer .footer-body .footer-main-1 .footer-contact p {
+          font-family: "Mukta Mahee", sans-serif;
+          color: rgba(255, 255, 255, 0.5); }
+      footer .footer-body .footer-main-1 .footer-input input {
+        background-color: #1A1A1A;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #505050;
+        transition: 0.5s;
+        color: #d8d8d8; }
+      footer .footer-body .footer-main-1 .footer-input .input-icons i {
+        position: absolute;
+        margin-left: 13%; }
+      footer .footer-body .footer-main-1 .footer-input .input-icons {
+        width: 100%; }
+      footer .footer-body .footer-main-1 .footer-input .icon {
+        padding: 10px;
+        min-width: 40px;
+        display: flex;
+        color: white; }
+      footer .footer-body .footer-main-1 .footer-input .input-field {
+        width: 100%;
+        padding: 10px;
+        display: flex; }
+      footer .footer-body .footer-main-1 .footer-input {
+        width: 250px; }
+        footer .footer-body .footer-main-1 .footer-input p {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200; }
+        footer .footer-body .footer-main-1 .footer-input ::placeholder {
+          font-style: italic; }
+    footer .footer-body hr {
+      width: 100%;
+      border: 1px solid #444444;
+      margin: 50px 0; }
+    footer .footer-body .footer-main-2 {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "Mukta Mahee", sans-serif;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 200; }
+      footer .footer-body .footer-main-2 .fa {
+        width: 15px;
+        color: #DC3545; }
+      footer .footer-body .footer-main-2 span {
+        color: #DC3545; }
+      footer .footer-body .footer-main-2 .input-icons-box {
+        display: flex;
+        flex-direction: row; }
+      footer .footer-body .footer-main-2 .input-icons {
+        text-align: center;
+        width: 30px; }
+        footer .footer-body .footer-main-2 .input-icons .fa {
+          color: rgba(255, 255, 255, 0.5);
+          transition: 0.5s; }
+        footer .footer-body .footer-main-2 .input-icons .fa:hover {
+          color: white; }
+
+.contact-header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/alex-block-607886-unsplash.jpg);
+  background-position: center;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .contact-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.contacts-main {
+  background-color: white; }
+  .contacts-main .contacts-main-body {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 120px; }
+    .contacts-main .contacts-main-body .main-form {
+      width: 57%;
+      border: 1px solid #ccc; }
+      .contacts-main .contacts-main-body .main-form .main-form-body {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        color: #6c757d; }
+        .contacts-main .contacts-main-body .main-form .main-form-body .input-name {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 20px; }
+          .contacts-main .contacts-main-body .main-form .main-form-body .input-name div {
+            width: 48%; }
+            .contacts-main .contacts-main-body .main-form .main-form-body .input-name div input {
+              width: 100%;
+              height: 50px;
+              border: 1px solid #ccc; }
+            .contacts-main .contacts-main-body .main-form .main-form-body .input-name div input:focus {
+              outline: none;
+              border: 1px solid #fd7e14; }
+        .contacts-main .contacts-main-body .main-form .main-form-body .input-email {
+          margin-bottom: 20px; }
+        .contacts-main .contacts-main-body .main-form .main-form-body input {
+          width: 100%;
+          height: 50px;
+          border: 1px solid #ccc; }
+        .contacts-main .contacts-main-body .main-form .main-form-body input:focus {
+          outline: none;
+          border: 1px solid #fd7e14; }
+        .contacts-main .contacts-main-body .main-form .main-form-body .text {
+          margin-bottom: 20px; }
+        .contacts-main .contacts-main-body .main-form .main-form-body textarea {
+          width: 100%;
+          border: 1px solid #ccc; }
+        .contacts-main .contacts-main-body .main-form .main-form-body textarea:focus {
+          outline: none;
+          border: 1px solid #fd7e14; }
+        .contacts-main .contacts-main-body .main-form .main-form-body .main-form-button {
+          height: 50px;
+          background-color: #FD7E14;
+          border: none;
+          outline: none;
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          color: white;
+          border-radius: 50px;
+          transition: 0.5s;
+          padding: 10px 30px;
+          color: black;
+          transition: 0.5s; }
+        .contacts-main .contacts-main-body .main-form .main-form-body .main-form-button:hover {
+          background-color: #994b0b;
+          color: white; }
+    .contacts-main .contacts-main-body .main-contacts {
+      width: 43%;
+      padding: 10px 100px; }
+      .contacts-main .contacts-main-body .main-contacts h6 {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 25px;
+        color: #6c757d; }
+      .contacts-main .contacts-main-body .main-contacts h1 {
+        font-family: "Playfair+Display", times, serif;
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 54px;
+        color: #6c757d; }
+
+.events-header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/slider-7.jpg);
+  background-position: center;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .events-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.events-main-body {
+  height: fit-content;
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .events-main-body .box-gallery {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .events-main-body .box-gallery .box-gallery-1 {
+      width: 48%;
+      display: flex;
+      flex-direction: column; }
+      .events-main-body .box-gallery .box-gallery-1 .box-item {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+        transition: 0.5s;
+        margin-bottom: 30px; }
+        .events-main-body .box-gallery .box-gallery-1 .box-item img {
+          width: 100%; }
+        .events-main-body .box-gallery .box-gallery-1 .box-item .events-main-box-text {
+          margin: 0 25px;
+          margin-top: 30px; }
+          .events-main-body .box-gallery .box-gallery-1 .box-item .events-main-box-text h6 {
+            font-family: "Mukta Mahee", sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 200;
+            color: #ced4da; }
+          .events-main-body .box-gallery .box-gallery-1 .box-item .events-main-box-text a {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: #000000;
+            line-height: 38px;
+            font-size: 26px;
+            transition: 0.5s; }
+          .events-main-body .box-gallery .box-gallery-1 .box-item .events-main-box-text a:hover {
+            color: #FD7E14; }
+      .events-main-body .box-gallery .box-gallery-1 .box-item:hover {
+        box-shadow: 0px 2px 20px 8px rgba(0, 0, 0, 0.103); }
+  .events-main-body .box-search {
+    width: 30%;
+    display: flex;
+    flex-direction: column; }
+    .events-main-body .box-search .search-container {
+      background-color: white;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24); }
+      .events-main-body .box-search .search-container .input-icons {
+        margin: 30px;
+        display: flex;
+        align-items: center; }
+        .events-main-body .box-search .search-container .input-icons input {
+          width: 100%;
+          height: 50px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          font-size: 16px;
+          background-color: white;
+          padding-left: 40px;
+          transition: 0.5s; }
+        .events-main-body .box-search .search-container .input-icons input:focus {
+          outline: none;
+          border: 1px solid black; }
+        .events-main-body .box-search .search-container .input-icons i {
+          margin-left: 15px;
+          position: absolute;
+          margin-top: auto;
+          vertical-align: middle;
+          color: #6C757D; }
+        .events-main-body .box-search .search-container .input-icons ::placeholder {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200;
+          color: #6C757D; }
+    .events-main-body .box-search .posts-container {
+      background-color: white;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24); }
+      .events-main-body .box-search .posts-container .posts {
+        margin: 30px; }
+        .events-main-body .box-search .posts-container .posts a {
+          text-decoration: none; }
+        .events-main-body .box-search .posts-container .posts .post-heading {
+          margin-bottom: 30px; }
+          .events-main-body .box-search .posts-container .posts .post-heading b {
+            font-family: "Mukta Mahee", sans-serif;
+            font-size: 18px; }
+        .events-main-body .box-search .posts-container .posts .post-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 25px; }
+          .events-main-body .box-search .posts-container .posts .post-box .box-image {
+            width: 30%;
+            height: fit-content; }
+            .events-main-body .box-search .posts-container .posts .post-box .box-image img {
+              width: 100%; }
+          .events-main-body .box-search .posts-container .posts .post-box .box-text {
+            width: 65%;
+            height: fit-content; }
+            .events-main-body .box-search .posts-container .posts .post-box .box-text h6 {
+              font-family: "Mukta Mahee", sans-serif;
+              font-size: 13px;
+              color: #adb5bd; }
+            .events-main-body .box-search .posts-container .posts .post-box .box-text p {
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 16px;
+              line-height: 19px;
+              color: black; }
+    .events-main-body .box-search .categories-container {
+      background-color: white;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24); }
+      .events-main-body .box-search .categories-container .categories {
+        margin: 30px; }
+        .events-main-body .box-search .categories-container .categories .categories-heading {
+          margin-bottom: 30px; }
+          .events-main-body .box-search .categories-container .categories .categories-heading b {
+            font-family: "Mukta Mahee", sans-serif;
+            font-size: 18px; }
+        .events-main-body .box-search .categories-container .categories ul {
+          list-style: none;
+          padding-left: 0; }
+          .events-main-body .box-search .categories-container .categories ul li {
+            width: 100%;
+            border-bottom: 1px solid #e9ecef; }
+            .events-main-body .box-search .categories-container .categories ul li a {
+              margin: 10px 0;
+              font-family: "Mukta Mahee", sans-serif;
+              font-size: 16px;
+              display: flex;
+              justify-content: space-between;
+              text-decoration: none;
+              color: #FD7E14;
+              transition: 0.5s; }
+              .events-main-body .box-search .categories-container .categories ul li a span {
+                color: #6C757D; }
+            .events-main-body .box-search .categories-container .categories ul li a:hover {
+              color: #994b0b; }
+
+.reservation-header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/slider-5.jpg);
+  background-position: center;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .reservation-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.main-forms-body {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  color: #000;
+  font-weight: 700; }
+  .main-forms-body .input-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .main-forms-body .input-name div {
+      width: 48%; }
+      .main-forms-body .input-name div input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #ccc; }
+      .main-forms-body .input-name div input:focus {
+        outline: none;
+        border: 1px solid #fd7e14; }
+  .main-forms-body .input-email {
+    margin-bottom: 20px; }
+  .main-forms-body input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc; }
+  .main-forms-body input:focus {
+    outline: none;
+    border: 1px solid #fd7e14; }
+  .main-forms-body .text {
+    margin-bottom: 20px; }
+  .main-forms-body textarea {
+    width: 100%;
+    border: 1px solid #ccc; }
+  .main-forms-body textarea:focus {
+    outline: none;
+    border: 1px solid #fd7e14; }
+  .main-forms-body .main-form-button {
+    height: 50px;
+    background-color: #FD7E14;
+    border: none;
+    outline: none;
+    font-family: "Mukta Mahee", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 10px 30px;
+    color: black;
+    transition: 0.5s; }
+  .main-forms-body .main-form-button:hover {
+    background-color: #994b0b;
+    color: white; }
+
+select {
+  width: 100%;
+  height: 50px;
+  color: #6c757d;
+  border: 1px solid #ccc; }
+
+select:focus {
+  outline: none;
+  border: 1px solid #fd7e14; }
+
+.main-container {
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column; }
+
+.room-header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/slider-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .room-header .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center; }
+
+.room-gallery-body {
+  height: fit-content;
+  margin: 130px;
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+  .room-gallery-body .rooms {
+    height: 100vh;
+    display: flex;
+    flex-direction: row; }
+    .room-gallery-body .rooms .rooms-image {
+      width: 50%; }
+      .room-gallery-body .rooms .rooms-image img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; }
+    .room-gallery-body .rooms .rooms-text {
+      width: 50%;
+      height: 100Vh;
+      padding: 50px; }
+      .room-gallery-body .rooms .rooms-text h1 {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 56px;
+        line-height: 67px;
+        font-weight: 300;
+        color: #FD7E14; }
+        .room-gallery-body .rooms .rooms-text h1 span {
+          font-family: "Mukta Mahee", sans-serif;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          font-weight: 200;
+          color: #6c757d; }
+      .room-gallery-body .rooms .rooms-text h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: #000000;
+        line-height: 38px; }
+      .room-gallery-body .rooms .rooms-text .p-first {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #6c757d; }
+      .room-gallery-body .rooms .rooms-text .p-second {
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 200;
+        line-height: 29px;
+        color: #6c757d; }
+      .room-gallery-body .rooms .rooms-text button {
+        height: 50px;
+        background-color: #FD7E14;
+        border: none;
+        outline: none;
+        font-family: "Mukta Mahee", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        color: white;
+        border-radius: 50px;
+        transition: 0.5s;
+        padding: 10px 30px; }
+      .room-gallery-body .rooms .rooms-text button:hover {
+        background-color: #d86b13; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 100%;
+  background-color: #F8F9FA; }
+
+/*# sourceMappingURL=main.csss.map */

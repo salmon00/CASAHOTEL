@@ -1,0 +1,135 @@
+@mixin heading-font {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: black;
+  line-height: 72px;
+}
+
+@mixin medium-font {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 38px;    
+}
+
+@mixin paragraph-font {
+  font-family: $main-font;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;  
+  color: #6c757d;  
+}
+
+@mixin small-font {
+  font-family: $main-font;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
+}
+
+@mixin primary-button {
+  height: 50px;
+  background-color: #FD7E14;
+  border: none;
+  outline: none;
+  font-family: $main-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: white;  
+  border-radius: 50px;
+  transition: 0.5s;
+  padding: 10px 30px;
+}
+$main-color:  #FD7E14;
+$main-font: 'Mukta Mahee', sans-serif;
+
+.main-container {
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+}
+///////////Header-Start//////////
+.room-header {
+  height: 100vh;  
+  width: 100vw; 
+  display: flex;  
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../../assets/images/slider-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .header-title {
+    width: 50%;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;    
+  } 
+}
+///////////Header-End////////////
+
+
+////////////////Gallery-Start//////////////
+.room-gallery-body {
+  height: fit-content;
+  margin: 130px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  .rooms {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    .rooms-image {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;                
+      }
+    }
+    .rooms-text {
+      width: 50%;
+      height: 100Vh;
+      padding: 50px;     
+      h1 {
+        font-family: $main-font;
+        font-size: 56px;
+        line-height: 67px;
+        font-weight: 300;
+        color: $main-color;
+        span {
+          @include small-font();
+          color: #6c757d;
+        }
+      }
+      h3 {                    
+        @include medium-font();
+      }
+      .p-first {
+        @include paragraph-font();
+      }
+      .p-second {
+        @include small-font();
+        line-height: 29px;
+        color: #6c757d;                  
+      }
+      button {
+        @include primary-button();
+      }
+      button:hover {
+        background-color: #d86b13;
+      }  
+    }
+  }
+}
+
+////////////////Gallery-End/////////////
